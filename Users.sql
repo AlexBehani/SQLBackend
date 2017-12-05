@@ -1,7 +1,7 @@
 USE [BIProject]
 GO
 
-/****** Object:  Table [dbo].[Users]    Script Date: 12/4/2017 11:47:24 AM ******/
+/****** Object:  Table [dbo].[Users]    Script Date: 12/5/2017 3:05:45 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -17,6 +17,7 @@ CREATE TABLE [dbo].[Users](
 	[AccessLevel] [int] NULL,
 	[Supervisor] [nvarchar](50) NULL,
 	[Location] [nvarchar](50) NULL,
+	[Role] [nvarchar](50) NULL,
  CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
 (
 	[UserID] ASC
