@@ -1,7 +1,7 @@
 USE [BIProject]
 GO
 
-/****** Object:  Table [dbo].[AspNetUsers]    Script Date: 12/5/2017 4:40:21 PM ******/
+/****** Object:  Table [dbo].[AspNetUsers]    Script Date: 12/8/2017 2:07:36 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -21,6 +21,9 @@ CREATE TABLE [dbo].[AspNetUsers](
 	[LockoutEnabled] [bit] NOT NULL,
 	[AccessFailedCount] [int] NOT NULL,
 	[UserName] [nvarchar](256) NOT NULL,
+	[FullName] [nvarchar](max) NULL,
+	[FName] [nvarchar](max) NULL,
+	[LName] [nvarchar](max) NULL,
  CONSTRAINT [PK_dbo.AspNetUsers] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
