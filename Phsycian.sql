@@ -1,7 +1,7 @@
 USE [BIProject]
 GO
 
-/****** Object:  Table [dbo].[Physician]    Script Date: 12/4/2017 11:46:44 AM ******/
+/****** Object:  Table [dbo].[Physician]    Script Date: 1/9/2018 2:58:58 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -19,6 +19,7 @@ CREATE TABLE [dbo].[Physician](
 	[PhysicianZipcode] [nvarchar](10) NULL,
 	[PhysicianPhoneN] [nvarchar](10) NULL,
 	[DEAno] [nvarchar](50) NULL,
+	[PhysicianFullName] [nvarchar](50) NULL,
  CONSTRAINT [PK_Physician] PRIMARY KEY CLUSTERED 
 (
 	[PhysicianId] ASC
